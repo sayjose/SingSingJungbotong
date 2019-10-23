@@ -13,8 +13,8 @@ import {
 } from 'react-native';
 import moment from 'moment';
 
-const API_KEY = 'El0ONPOybFW4UNRmc%2BHYCSw%2BRzqAvo5juTXxIP4lHucpROF0ySS1kvqbAW1uMlmus8YjHbeiC2d%2B0DU7S%2B2NVA%3D%3D';
-const API_STEM = 'http://apis.data.go.kr/B552895/LocalGovPriceInfoService/getLocalGovPriceResearchSearch';
+const API_KEY = 'API_KEY';
+const API_STEM = 'API_URL';
 
 var DOMParser = require('xmldom').DOMParser;
 
@@ -39,7 +39,7 @@ export default class SettingsScreen extends React.Component {
     var prdlst_cd = this.state.params;    
     //Have a try and catch block for catching errors.
     try {
-      await fetch(`https://api.gong-ha.com/search_item_price_data`, {
+      await fetch(`API_URL`, {
         method: 'POST',
         headers: {
           'Accept': 'application/json',

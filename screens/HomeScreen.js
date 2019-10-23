@@ -74,7 +74,7 @@ export default class HomeScreen extends React.Component {
       var examin_mrkt_cd = marketObj.market;
       var tempArray = [];
       var priceArray = [];
-      await fetch(`https://api.gong-ha.com/search_location_detail_data`, {
+      await fetch(`API_URL`, {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
