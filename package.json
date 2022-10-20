@@ -13,7 +13,7 @@
   "dependencies": {
     "@expo/samples": "2.1.1",
     "@react-native-firebase/app": "0.0.4",
-    "expo": "^32.0.0",
+    "expo": "^46.0.16",
     "hangul-js": "^0.2.5",
     "moment": "^2.24.0",
     "react": "16.5.0",
